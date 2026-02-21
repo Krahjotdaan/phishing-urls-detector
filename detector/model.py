@@ -62,7 +62,7 @@ class PhishDetector:
         self.model.to(DEVICE)
         self.model.eval()
         
-        print(f"Модель загружена на {DEVICE}")
+        print(f"Model was loaded on {DEVICE}")
     
     def predict(self, url: str) -> dict:
         if rule_based_phish(url):
