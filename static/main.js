@@ -36,10 +36,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const data = await response.json();
             showResult(data);
 
-        } catch (err) {
+        } 
+        catch (err) {
             alert('Ошибка: Не удалось связаться с сервером. Убедитесь, что FastAPI запущен.');
             console.error(err);
-        } finally {
+        } 
+        finally {
             loader.style.display = 'none';
             if (btn) {
                 btn.disabled = false;
@@ -64,7 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (data.rule_based) {
                 text.textContent += ' (Обнаружено правилом: @ в URL)';
             }
-        } else {
+        } 
+        else {
             title.innerHTML = '<i class="bi bi-check-circle-fill"></i> БЕЗОПАСНО';
             text.textContent = 'Угрозы не обнаружены.';
         }
