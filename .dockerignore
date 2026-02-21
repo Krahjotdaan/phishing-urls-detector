@@ -1,0 +1,9 @@
+**/.git
+**/LICENSE
+**/.vscode
+**/__pycache__/
+**/datasets
+**/notebooks
+**/venv
+*.gitignore
+*.md
